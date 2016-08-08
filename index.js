@@ -2,8 +2,8 @@ var chores = ['mop', 'vacuum', 'clean bathroom', 'clean kitchen', 'take out rubb
 
 function decideChores(array){
 
-	var flatmateOneArr = [];
-	var flatmateTwoArr = [];
+	var flatmate1Arr = [];
+	var flatmate2Arr = [];
 
 	while(array.length > 0){
 	var number = Math.floor(Math.random() * (10 - 0) + 0); //generates random number between 0 and 10
@@ -26,11 +26,9 @@ function decideChores(array){
 		}
 	}
 
-	return  { //returns an object with the chores matched to the person
+	console.log ({ //returns an object with the chores matched to the person
 		flatMateOne: flatmate1Arr,
 		flatMateTwo: flatmate2Arr
-	}
+	})
 
 }
-
-console.log(decideChores(chores, 'james', 'george'));
