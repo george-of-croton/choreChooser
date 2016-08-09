@@ -26,6 +26,28 @@ function decideChores(array){
 		}
 	}
 
+	for(i = 0; i < flatmate1Arr.length; i++){
+
+		var list = document.createElement('li')
+		var node = document.createTextNode(flatmate1Arr[i])
+		list.appendChild(node)
+
+		var element = document.getElementById("georgeList");
+		var child = document.getElementById("referenceDiv");
+		element.insertBefore(list, child);
+	}
+	for(i = 0; i < flatmate2Arr.length; i++){
+
+		var list = document.createElement('li')
+		var node = document.createTextNode(flatmate2Arr[i])
+		list.appendChild(node)
+
+		var element = document.getElementById("jamesList");
+		var child = document.getElementById("referenceDiv");
+		element.insertBefore(list, child);
+	}
+
+
 	console.log ({ //returns an object with the chores matched to the person
 		flatMateOne: flatmate1Arr,
 		flatMateTwo: flatmate2Arr
